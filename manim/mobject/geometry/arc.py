@@ -519,11 +519,12 @@ class Circle(Arc):
         self,
         radius: float | None = None,
         color: ParsableManimColor = RED,
+        start_angle: float = 0,
         **kwargs,
     ) -> None:
         super().__init__(
             radius=radius,
-            start_angle=0,
+            start_angle=start_angle,
             angle=TAU,
             color=color,
             **kwargs,
